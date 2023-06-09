@@ -22,7 +22,7 @@ import {
     content = JSONinterval(content);
   }
   
-  export default function (
+  export const randUserAgent = function(
     device: string,
     browser: string | null = null,
     os: string | null = null
