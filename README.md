@@ -1,5 +1,27 @@
 # Random User Agent
 
+Fork of [rand-user-agent](https://www.npmjs.com/package/rand-user-agent) with the following changes:
+
+- [x] Hybrid ESM/CJS module instead of ESM only
+
+## Usage Example 
+
+```js
+// either works
+const { randUserAgent } = require('rand-user-agent');
+// or
+import { randUserAgent } from 'rand-user-agent';
+
+const agent = randUserAgent('desktop');
+console.log(agent);
+
+```
+
+<details>
+<summary>Original Description from upstream</summary>
+
+# Random User Agent
+
 rand-user-agent is a nodejs package that provides random generation of a real user-agent string, based on the frequency the user-agents occur.
 
 This package was originally created as a functionality for [WebScrapingAPI](https://www.webscrapingapi.com/), but it can be integrated into any node.js scraping project. If you need a dependable and feature-rich web scraper, [give the WebScrapingAPI free trial a go](https://www.webscrapingapi.com/pricing/)!
@@ -72,3 +94,6 @@ To make things easier for us, when somebody uses the package we are first transf
 ```
 
 Using the data in this format allows us to easily retrieve a random user-agent, while also taking into account how often it occured in our data.
+
+
+</details>

@@ -1,9 +1,24 @@
 {
-  "name": "rand-user-agent",
+  "name": "@tonyrl/rand-user-agent",
   "version": "2.0.16",
   "description": "This package is for getting latest agents and randomize it",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
+  "keywords": [
+    "agent",
+    "agents",
+    "random",
+    "random-user-agent",
+    "user",
+    "user-agent",
+    "user-agents"
+  ],
+  "homepage": "https://github.com/TonyRL/rand-user-agent#readme",
+  "bugs": {
+    "url": "https://github.com/TonyRL/rand-user-agent/issues"
+  },
+  "repository": "git://github.com/TonyRL/rand-user-agent.git",
+  "license": "ISC",
+  "author": "TonyRL",
+  "type": "module",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -11,38 +26,17 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "scripts": {
-    "test": "",
-    "build": "tsup"
-  },
-  "engines": {
-    "node": ">=14.16"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/WebScrapingAPI/rand-user-agent.git"
-  },
-  "type": "module",
-  "keywords": [
-    "user-agent",
-    "user",
-    "agent",
-    "nodejs",
-    "agents",
-    "user-agents",
-    "random",
-    "random-user-agent"
-  ],
-  "author": "WebScrapingAPI",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/WebScrapingAPI/rand-user-agent/issues"
-  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "files": [
     "dist",
     "data"
   ],
-  "homepage": "https://github.com/WebScrapingAPI/rand-user-agent#readme",
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build",
+    "test": ""
+  },
   "devDependencies": {
     "@types/node": "^18.14.1",
     "@types/pg": "^8.6.6",
@@ -50,8 +44,14 @@
     "dotenv": "^10.0.0",
     "mysql2": "^3.1.2",
     "pg": "^8.7.1",
+    "prettier": "^2.8.8",
+    "semver": "^7.5.1",
     "tsup": "^6.7.0",
     "typescript": "^4.9.5",
-    "ua-parser-js": "^1.0.2"
+    "ua-parser-js": "^1.0.2",
+    "zx": "^7.2.2"
+  },
+  "engines": {
+    "node": ">=14.16"
   }
 }

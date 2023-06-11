@@ -5,11 +5,11 @@ interface IntervalArray {
 interface FrequencyJson {
     [key: string]: { [key: string]: number };
 }
-  
+
 interface IntervalJson {
     [key: string]: { [key: string]: { minIndex: number; maxIndex: number } };
 }
-  
+
 export const randomElement = function (array: IntervalArray): string {
 
     /* Gets a random element from an array */
@@ -25,8 +25,8 @@ export const randomElement = function (array: IntervalArray): string {
 };
 
 export const JSONIsFrequency = function(json: FrequencyJson): boolean {
-    /* 
-    Checks the format of a given json. 
+    /*
+    Checks the format of a given json.
     If the first value of the first property is not a number
     then it will return true as the json has the format
     { deviceType: { userAgent: frequency }}
@@ -39,10 +39,10 @@ export const JSONIsFrequency = function(json: FrequencyJson): boolean {
 export const JSONfrequency = function (
     content: IntervalJson
   ): FrequencyJson {
-    /* 
+    /*
     Transforms an interval json to a frequency json. So for example if you have
     a json in the format { deviceType: { userAgent: {minIndex: 0, maxIndex: 5} }}
-    it will become { deviceType: { userAgent: 5 }} 
+    it will become { deviceType: { userAgent: 5 }}
     */
     let contentParsed: FrequencyJson = {};
     for (let key in content) {
@@ -63,8 +63,8 @@ export const arrayUniqueElements = function<T>(array: T[]): T[] {
 export const JSONfrequencyNormalize = function(
     content: FrequencyJson
   ): FrequencyJson {
-    /* 
-    Sometimes a user agent might have a frequency too big. 
+    /*
+    Sometimes a user agent might have a frequency too big.
     To prevent that user agent from being returned most of the times, we should normalize
     the frequency values, in a way so that all user agents might show up. For this
     we replace the frequency value with the position the freqeuency is in the sorted array
@@ -86,7 +86,7 @@ export const JSONfrequencyNormalize = function(
 };
 
 export const JSONinterval = function(content: FrequencyJson): IntervalJson {
-    /* 
+    /*
     Transforms a frequency json to an interval json. So, for example, if you have
     a json in the format { deviceType: { userAgent: 5 }}
     it will become { deviceType: { userAgent: {minIndex: 0, maxIndex: 5} }}
