@@ -8,9 +8,9 @@ Fork of [rand-user-agent](https://www.npmjs.com/package/rand-user-agent) with th
 
 ```js
 // either works
-const { randUserAgent } = require('rand-user-agent');
+const { randUserAgent } = require('@tonyrl/rand-user-agent');
 // or
-import { randUserAgent } from 'rand-user-agent';
+import { randUserAgent } from '@tonyrl/rand-user-agent';
 
 const agent = randUserAgent('desktop');
 console.log(agent);
