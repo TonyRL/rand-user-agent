@@ -14,12 +14,15 @@ jobs:
         node-version: [ 16, 18, 20 ]
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-      - run: npm ci
-    #   - run: npm run test
+          cache: 'pnpm'
+      - run: pnpm i
+    #   - run: pnpm test
 
   automerge:
     needs: build
