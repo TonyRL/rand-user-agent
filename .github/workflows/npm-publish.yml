@@ -31,7 +31,7 @@ jobs:
           envkey_MYSQL_DB_PASS: ${{secrets.mysql_db_pass}}
           envkey_MYSQL_DB_NAME: ${{secrets.mysql_db_name}}
           file_name: .env
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: https://registry.npmjs.org/
