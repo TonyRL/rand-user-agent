@@ -19,7 +19,7 @@ jobs:
         node-version: [ 18.x ]
     steps:
       - uses: actions/checkout@v3
-      - uses: SpicyPizza/create-envfile@v1
+      - uses: SpicyPizza/create-envfile@v2
         with:
           envkey_PG_DB_HOST: ${{secrets.pg_db_host}}
           envkey_PG_DB_USER: ${{secrets.pg_db_user}}
