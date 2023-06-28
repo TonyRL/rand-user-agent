@@ -1,5 +1,5 @@
 module.exports = {
-    randomElement: function(array) {
+    randomElement: function (array) {
         /* Gets a random element from an array */
         let index = Math.floor(Math.random() * (array[Object.keys(array).pop()].maxIndex + 1));
         for (let [userAgent, indexes] of Object.entries(array)) {
@@ -7,11 +7,11 @@ module.exports = {
                 return userAgent;
             }
         }
-        return "No Agent Found";
+        return 'No Agent Found';
     },
-    JSONIsFrequency: function(json) {
-        /* 
-        Checks the format of a given json. 
+    JSONIsFrequency: function (json) {
+        /*
+        Checks the format of a given json.
         If the first value of the first property is not a number
         then it will return true as the json has the format
         { deviceType: { userAgent: frequency }}
@@ -19,11 +19,11 @@ module.exports = {
         [userAgent, frequency] = Object.entries(json[Object.keys(json)[0]])[0];
         return !isNaN(frequency);
     },
-    JSONfrequency: function(content) {
-        /* 
+    JSONfrequency: function (content) {
+        /*
         Transforms an interval json to a frequency json. So for example if you have
         a json in the format { deviceType: { userAgent: {minIndex: 0, maxIndex: 5} }}
-        it will become { deviceType: { userAgent: 5 }} 
+        it will become { deviceType: { userAgent: 5 }}
         */
         let contentParsed = {};
         for (let key in content) {
@@ -34,14 +34,14 @@ module.exports = {
         }
         return contentParsed;
     },
-    arrayUniqueElements: function(array) {
-        return array.filter(function(el, index, arr) {
+    arrayUniqueElements: function (array) {
+        return array.filter(function (el, index, arr) {
             return index == arr.indexOf(el);
         });
     },
-    JSONfrequencyNormalize: function(content) {
-        /* 
-        Sometimes a user agent might have a frequency too big. 
+    JSONfrequencyNormalize: function (content) {
+        /*
+        Sometimes a user agent might have a frequency too big.
         To prevent that user agent from being returned most of the times, we should normalize
         the frequency values, in a way so that all user agents might show up. For this
         we replace the frequency value with the position the freqeuency is in the sorted array
@@ -59,8 +59,8 @@ module.exports = {
         }
         return contentParsed;
     },
-    JSONinterval: function(content) {
-        /* 
+    JSONinterval: function (content) {
+        /*
         Transforms an frequency json to a interval json. So for example if you have
         a json in the format { deviceType: { userAgent: 5 }}
         it will become { deviceType: { userAgent: {minIndex: 0, maxIndex: 5} }}
@@ -72,11 +72,11 @@ module.exports = {
             for (let [userAgent, frequency] of Object.entries(content[key])) {
                 contentParsed[key][userAgent] = {
                     minIndex: minIndex,
-                    maxIndex: (minIndex + frequency - 1),
+                    maxIndex: minIndex + frequency - 1,
                 };
                 minIndex = minIndex + frequency;
             }
         }
         return contentParsed;
     },
-}
+};

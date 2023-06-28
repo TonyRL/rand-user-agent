@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: v1.x
+  pull_request:
+    branches: v1.x
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 16, 18, 20 ]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: v1.x
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm ci
+    #   - run: npm run test
+
+  automerge:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: write
+    steps:
+      - uses: fastify/github-action-merge-dependabot@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          target: minor

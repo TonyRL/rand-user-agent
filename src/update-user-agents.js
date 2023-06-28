@@ -1,8 +1,8 @@
-require('dotenv').config()
+require('dotenv').config();
 const helpers = require('./helpers');
 const fs = require('fs');
-const path = require("path");
-const DeviceDetector = require("device-detector-js");
+const path = require('path');
+const DeviceDetector = require('device-detector-js');
 var parser = require('ua-parser-js');
 
 const deviceDetector = new DeviceDetector();
@@ -19,7 +19,7 @@ const pool = new Pool({
     ssl: {
         rejectUnauthorized: false,
     },
-})
+});
 
 var mysql_con = mysql.createConnection({
     host: process.env.MYSQL_DB_HOST,
@@ -29,10 +29,9 @@ var mysql_con = mysql.createConnection({
 });
 mysql_con.connect();
 
-
 // These can be changed based on your data
 let query = "SELECT context_user_agent, COUNT(context_user_agent) AS frequency FROM prod.pages  WHERE original_timestamp > date_trunc('day', NOW() - interval '3 months') GROUP BY context_user_agent";
-let mysql_query = "SELECT user_agent AS context_user_agent, COUNT(user_agent) AS frequency FROM user_agents  WHERE created_at > DATE_SUB(now(), INTERVAL 3 MONTH) GROUP BY user_agent"
+let mysql_query = 'SELECT user_agent AS context_user_agent, COUNT(user_agent) AS frequency FROM user_agents  WHERE created_at > DATE_SUB(now(), INTERVAL 3 MONTH) GROUP BY user_agent';
 
 let content = {};
 
@@ -52,8 +51,8 @@ function parseRow(row) {
 
     var ua = parser(row.context_user_agent);
 
-    deviceType += (ua.browser.name ? ua.browser.name.toLowerCase() : '') 
-    deviceType += (ua.os.name ? ua.os.name.toLowerCase() : '')
+    deviceType += ua.browser.name ? ua.browser.name.toLowerCase() : '';
+    deviceType += ua.os.name ? ua.os.name.toLowerCase() : '';
 
     if (!content.hasOwnProperty(deviceType)) {
         content[deviceType] = {};
@@ -68,22 +67,22 @@ function parseRow(row) {
 pool.query(query, (err, res) => {
     if (typeof err === 'undefined' && typeof res !== 'undefined') {
         for (let index = 0; index < res.rows.length; index++) {
-            parseRow(res.rows[index])
+            parseRow(res.rows[index]);
         }
     } else {
         console.log(err);
     }
-    pool.end()
+    pool.end();
 
     mysql_con.query(mysql_query, function (error, results, fields) {
         if (error) {
             console.log(error);
         } else {
             for (let index = 0; index < results.length; index++) {
-                parseRow(results[index])
+                parseRow(results[index]);
             }
         }
         fs.writeFileSync(path.join(__dirname, '../data/user-agents.json'), JSON.stringify(content));
-        process.exit()
+        process.exit();
     });
-})
+});

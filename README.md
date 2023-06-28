@@ -9,13 +9,13 @@ This package was originally created as a functionality for [WebScrapingAPI](http
 Run the following command in the main folder of your project:
 
 ```
-npm i rand-user-agent
+npm i rand-user-agent@v1.x
 ```
 
-## Usage Example 
+## Usage Example
 
 ```
-const randUserAgent = require('rand-user-agent');
+const randUserAgent = require('@tonyrl/rand-user-agent');
 const agent = randUserAgent("desktop");
 
 console.log(agent);
@@ -25,7 +25,7 @@ console.log(agent);
 You can also provide a browser and an operating system in the parameters of randUserAgent in order to filter out the user agents:
 
 ```
-const randUserAgent = require('rand-user-agent');
+const randUserAgent = require('@tonyrl/rand-user-agent');
 const agent = randUserAgent("desktop", "chrome", "linux");
 
 console.log(agent);
@@ -34,7 +34,7 @@ console.log(agent);
 
 ## How does it work
 
-Using our own database with data about guests and their user-agent, we update a file called "user-agents.json" on a weekly basis with new information. 
+Using our own database with data about guests and their user-agent, we update a file called "user-agents.json" on a weekly basis with new information.
 
 This data is saved in a json under the following format:
 

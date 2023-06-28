@@ -1,36 +1,35 @@
 {
   "name": "rand-user-agent",
-  "version": "1.0.109",
+  "version": "1.1.18",
   "description": "This package is for getting latest agents and randomize it",
+  "keywords": [
+    "agent",
+    "agents",
+    "random",
+    "random-user-agent",
+    "user",
+    "user-agent",
+    "user-agents"
+  ],
+  "homepage": "https://github.com/TonyRL/rand-user-agent#readme",
+  "bugs": {
+    "url": "https://github.com/TonyRL/rand-user-agent/issues"
+  },
+  "repository": "git://github.com/TonyRL/rand-user-agent.git",
+  "license": "ISC",
+  "author": "TonyRL",
   "main": "src/index.js",
   "scripts": {
     "test": ""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/WebScrapingAPI/rand-user-agent.git"
-  },
-  "keywords": [
-    "user-agent",
-    "user",
-    "agent",
-    "nodejs",
-    "agents",
-    "user-agents",
-    "random",
-    "random-user-agent"
-  ],
-  "author": "WebScrapingAPI",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/WebScrapingAPI/rand-user-agent/issues"
-  },
-  "homepage": "https://github.com/WebScrapingAPI/rand-user-agent#readme",
   "devDependencies": {
     "device-detector-js": "^2.2.10",
     "dotenv": "^10.0.0",
     "mysql2": "^3.1.2",
     "pg": "^8.7.1",
-    "ua-parser-js": "^1.0.2"
+    "prettier": "^2.8.8",
+    "semver": "^7.5.3",
+    "ua-parser-js": "^1.0.2",
+    "zx": "^7.2.2"
   }
 }
