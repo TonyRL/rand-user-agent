@@ -1,5 +1,5 @@
 {
-  "name": "rand-user-agent",
+  "name": "@tonyrl/rand-user-agent",
   "version": "1.1.19",
   "description": "This package is for getting latest agents and randomize it",
   "keywords": [
@@ -21,7 +21,8 @@
   "main": "src/index.js",
   "files": [
     "data",
-    "src"
+    "src",
+    "!src/update-user-agents.js"
   ],
   "scripts": {
     "test": ""
