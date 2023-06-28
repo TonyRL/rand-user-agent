@@ -1,4 +1,4 @@
-const { diff, gte, patch } = require('semver');
+const { diff, patch } = require('semver');
 
 (async () => {
     const upstreamPackageJson = await fetch('https://registry.npmjs.com/rand-user-agent');

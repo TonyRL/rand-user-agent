@@ -18,13 +18,17 @@ jobs:
           ref: v1.x
           fetch-depth: 0
 
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
       - uses: actions/setup-node@v3
         with:
-          cache: 'npm'
+          cache: 'pnpm'
           node-version: lts/*
           registry-url: https://registry.npmjs.org/
 
-      - run: npm ci
+      - run: pnpm i
 
       - uses: actions/github-script@v6
         id: my-script
@@ -33,7 +37,7 @@ jobs:
         with:
           script: |
             const script = require('${{ github.workspace }}/scripts/update-fork.js')
-            return script({ core })
+            await script()
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         id: git-auto-commit
@@ -42,6 +46,7 @@ jobs:
           commit_message: |
             chore: update user agents database
           commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          branch: v1.x
 
       - name: GitHub Release
         uses: softprops/action-gh-release@v0.1.15
@@ -51,7 +56,7 @@ jobs:
           target_commitish: ${{ steps.git-auto-commit.outputs.commit_hash }}
           generate_release_notes: true
 
-      - run: npm publish --access public --provenance --tag v1.x
+      - run: pnpm publish --access public --provenance --tag v1.x
         if: fromJSON(steps.my-script.outputs.result).continue
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
