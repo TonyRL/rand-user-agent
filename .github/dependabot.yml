@@ -7,10 +7,29 @@ updates:
     open-pull-requests-limit: 10
     labels:
       - dependencies
+
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
       interval: daily
+    open-pull-requests-limit: 10
+    labels:
+      - dependencies
+
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: daily
+    target-branch: 'v1.x'
+    open-pull-requests-limit: 10
+    labels:
+      - dependencies
+
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: daily
+    target-branch: 'v1.x'
     open-pull-requests-limit: 10
     labels:
       - dependencies
