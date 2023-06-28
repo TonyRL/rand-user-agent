@@ -19,6 +19,7 @@
   "license": "ISC",
   "author": "TonyRL",
   "main": "src/index.js",
+  "types": "src/index.d.ts",
   "files": [
     "data",
     "src",
