@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   device-detector-js:
-    specifier: ^2.2.10
-    version: 2.2.10
+    specifier: ^3.0.3
+    version: 3.0.3
   dotenv:
     specifier: ^16.3.1
     version: 16.3.1
@@ -113,8 +113,8 @@ packages:
     engines: {node: '>=0.10'}
     dev: true
 
-  /device-detector-js@2.2.10:
-    resolution: {integrity: sha512-zLcDSU10WIqbARXecaVJJxx0ZuGWq+MVhj9f9qehdBCFr9RMa5mQGTt2IZNIgKuCIind/j/DzRDViEdc2FfBGQ==}
+  /device-detector-js@3.0.3:
+    resolution: {integrity: sha512-jM89LJAvP6uOd84at8OlD9dWP8KeYCCHUde0RT0HQo/stdoRH4b54Xl/fntx2nEXCmqiFhmo+/cJetS2VGUHPw==}
     engines: {node: '>= 8.11.4'}
     dev: true
 
