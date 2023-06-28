@@ -1,6 +1,10 @@
-const { diff, patch } = require('semver');
+import 'zx/globals';
+import { diff, patch } from 'semver';
 
-(async () => {
+/**
+ * @param { { core: import('@actions/core') } }
+ */
+export default async ({ core }) => {
     const upstreamPackageJson = await fetch('https://registry.npmjs.com/rand-user-agent');
     const upstreamVersion = (await upstreamPackageJson.json())['dist-tags'].latest;
     const localPackageJson = await fs.readJson('package.json');
@@ -25,4 +29,4 @@ const { diff, patch } = require('semver');
         continue: true,
         version: `v${localPackageJson.version}`,
     };
-})();
+};

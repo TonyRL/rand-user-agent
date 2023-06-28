@@ -36,8 +36,8 @@ jobs:
           FORCE_COLOR: 3
         with:
           script: |
-            const script = require('${{ github.workspace }}/scripts/update-fork.js')
-            await script()
+            const { default: script } = await import('${{ github.workspace }}/scripts/update-fork.mjs')
+            return script({ core })
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         id: git-auto-commit
