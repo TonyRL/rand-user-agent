@@ -18,7 +18,7 @@ jobs:
       matrix:
         node-version: [ 18.x ]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: SpicyPizza/create-envfile@v2
         with:
           envkey_PG_DB_HOST: ${{secrets.pg_db_host}}
