@@ -24,7 +24,8 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs",
       "types": "./dist/index.d.ts"
-    }
+    },
+    "./data/user-agents.json": "./data/user-agents.json"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
