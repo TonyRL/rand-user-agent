@@ -37,7 +37,7 @@ devDependencies:
     version: 5.2.2
   ua-parser-js:
     specifier: ^1.0.2
-    version: 1.0.36
+    version: 1.0.37
   zx:
     specifier: ^7.2.2
     version: 7.2.3
@@ -1303,8 +1303,8 @@ packages:
     hasBin: true
     dev: true
 
-  /ua-parser-js@1.0.36:
-    resolution: {integrity: sha512-znuyCIXzl8ciS3+y3fHJI/2OhQIXbXw9MWC/o3qwyR+RGppjZHrM27CGFSKCJXi2Kctiz537iOu2KnXs1lMQhw==}
+  /ua-parser-js@1.0.37:
+    resolution: {integrity: sha512-bhTyI94tZofjo+Dn8SN6Zv8nBDvyXTymAdM3LDI/0IboIUwTu1rEhW7v2TfiVsoYWgkQ4kOVqnI8APUFbIQIFQ==}
     dev: true
 
   /undici-types@5.26.5:
