@@ -19,7 +19,7 @@ devDependencies:
     version: 16.3.1
   mysql2:
     specifier: ^3.3.4
-    version: 3.6.2
+    version: 3.6.3
   pg:
     specifier: ^8.7.1
     version: 8.11.3
@@ -820,8 +820,8 @@ packages:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: true
 
-  /mysql2@3.6.2:
-    resolution: {integrity: sha512-m5erE6bMoWfPXW1D5UrVwlT8PowAoSX69KcZzPuARQ3wY1RJ52NW9PdvdPo076XiSIkQ5IBTis7hxdlrQTlyug==}
+  /mysql2@3.6.3:
+    resolution: {integrity: sha512-qYd/1CDuW1KYZjD4tzg2O8YS3X/UWuGH8ZMHyMeggMTXL3yOdMisbwZ5SNkHzDGlZXKYLAvV8tMrEH+NUMz3fw==}
     engines: {node: '>= 8.0'}
     dependencies:
       denque: 2.1.0
