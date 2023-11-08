@@ -10,7 +10,7 @@ devDependencies:
     version: 20.9.0
   '@types/pg':
     specifier: ^8.6.6
-    version: 8.10.8
+    version: 8.10.9
   device-detector-js:
     specifier: ^3.0.3
     version: 3.0.3
@@ -324,8 +324,8 @@ packages:
       undici-types: 5.26.5
     dev: true
 
-  /@types/pg@8.10.8:
-    resolution: {integrity: sha512-EqSUgXvnbEnMkIdffX1cDsmbvNt5Fzoim17JRwdaHaCpeTz440FocCxcStU9GgJvA+1aqtHEjHgFlH0d8ZCjAg==}
+  /@types/pg@8.10.9:
+    resolution: {integrity: sha512-UksbANNE/f8w0wOMxVKKIrLCbEMV+oM1uKejmwXr39olg4xqcfBDbXxObJAt6XxHbDa4XTKOlUEcEltXDX+XLQ==}
     dependencies:
       '@types/node': 20.9.0
       pg-protocol: 1.6.0
