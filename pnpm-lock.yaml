@@ -10,7 +10,7 @@ devDependencies:
     version: 3.0.3
   dotenv:
     specifier: ^16.3.1
-    version: 16.3.2
+    version: 16.4.0
   mysql2:
     specifier: ^3.1.2
     version: 3.7.1
@@ -125,8 +125,8 @@ packages:
       path-type: 4.0.0
     dev: true
 
-  /dotenv@16.3.2:
-    resolution: {integrity: sha512-HTlk5nmhkm8F6JcdXvHIzaorzCoziNQT9mGxLPVXW8wJF1TiGSL60ZGB4gHWabHOaMmWmhvk2/lPHfnBiT78AQ==}
+  /dotenv@16.4.0:
+    resolution: {integrity: sha512-WvImr5kpN5NGNn7KaDjJnLTh5rDVLZiDf/YLA8T1ZEZEBZNEDOE+mnkS0PVjPax8ZxBP5zC5SLMB3/9VV5de9g==}
     engines: {node: '>=12'}
     dev: true
 
