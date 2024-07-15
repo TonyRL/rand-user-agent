@@ -28,7 +28,7 @@ importers:
         version: 8.12.0
       prettier:
         specifier: ^3.0.2
-        version: 3.3.2
+        version: 3.3.3
       semver:
         specifier: ^7.5.1
         version: 7.6.2
@@ -718,8 +718,8 @@ packages:
   postgres-range@1.1.4:
     resolution: {integrity: sha512-i/hbxIE9803Alj/6ytL7UHQxRvZkI9O4Sy+J3HGc4F4oo/2eQAjTSNJ0bfxyse3bH0nuVesCk+3IRLaMtG3H6w==}
 
-  prettier@3.3.2:
-    resolution: {integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==}
+  prettier@3.3.3:
+    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -1453,7 +1453,7 @@ snapshots:
 
   postgres-range@1.1.4: {}
 
-  prettier@3.3.2: {}
+  prettier@3.3.3: {}
 
   punycode@2.3.1: {}
 
