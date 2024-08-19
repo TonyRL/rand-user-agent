@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@types/node':
         specifier: ^22.0.2
-        version: 22.3.0
+        version: 22.4.1
       '@types/pg':
         specifier: ^8.6.6
         version: 8.11.6
@@ -318,8 +318,8 @@ packages:
   '@types/jsonfile@6.1.4':
     resolution: {integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ==}
 
-  '@types/node@22.3.0':
-    resolution: {integrity: sha512-nrWpWVaDZuaVc5X84xJ0vNrLvomM205oQyLsRt7OHNZbSHslcWsvgFR7O7hire2ZonjLrWBbedmotmIlJDVd6g==}
+  '@types/node@22.4.1':
+    resolution: {integrity: sha512-1tbpb9325+gPnKK0dMm+/LMriX0vKxf6RnB0SZUqfyVkQ4fMgUSySqhxE/y8Jvs4NyF1yHzTfG9KlnkIODxPKg==}
 
   '@types/pg@8.11.6':
     resolution: {integrity: sha512-/2WmmBXHLsfRqzfHW7BNZ8SbYzE8OSk7i3WjFYvfgRHj7S1xj+16Je5fUKv3lVdVzk/zn9TXOqf+avFCFIE0yQ==}
@@ -888,8 +888,8 @@ packages:
   ua-parser-js@1.0.38:
     resolution: {integrity: sha512-Aq5ppTOfvrCMgAPneW1HfWj66Xi7XL+/mIy996R1/CLS/rcyJQm6QZdsKrUeivDFQ+Oc9Wyuwor8Ze8peEoUoQ==}
 
-  undici-types@6.18.2:
-    resolution: {integrity: sha512-5ruQbENj95yDYJNS3TvcaxPMshV7aizdv/hWYjGIKoANWKjhWNBsr2YEuYZKodQulB1b8l7ILOuDQep3afowQQ==}
+  undici-types@6.19.6:
+    resolution: {integrity: sha512-e/vggGopEfTKSvj4ihnOLTsqhrKRN3LeO6qSN/GxohhuRv8qH9bNQ4B8W7e/vFL+0XTnmHPB4/kegunZGA4Org==}
 
   webidl-conversions@4.0.2:
     resolution: {integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==}
@@ -1092,21 +1092,21 @@ snapshots:
   '@types/fs-extra@11.0.4':
     dependencies:
       '@types/jsonfile': 6.1.4
-      '@types/node': 22.3.0
+      '@types/node': 22.4.1
     optional: true
 
   '@types/jsonfile@6.1.4':
     dependencies:
-      '@types/node': 22.3.0
+      '@types/node': 22.4.1
     optional: true
 
-  '@types/node@22.3.0':
+  '@types/node@22.4.1':
     dependencies:
-      undici-types: 6.18.2
+      undici-types: 6.19.6
 
   '@types/pg@8.11.6':
     dependencies:
-      '@types/node': 22.3.0
+      '@types/node': 22.4.1
       pg-protocol: 1.6.1
       pg-types: 4.0.2
 
@@ -1636,7 +1636,7 @@ snapshots:
 
   ua-parser-js@1.0.38: {}
 
-  undici-types@6.18.2: {}
+  undici-types@6.19.6: {}
 
   webidl-conversions@4.0.2: {}
 
@@ -1670,4 +1670,4 @@ snapshots:
   zx@8.1.4:
     optionalDependencies:
       '@types/fs-extra': 11.0.4
-      '@types/node': 22.3.0
+      '@types/node': 22.4.1
