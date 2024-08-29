@@ -13,7 +13,7 @@ importers:
         version: 22.5.1
       '@types/pg':
         specifier: ^8.6.6
-        version: 8.11.7
+        version: 8.11.8
       device-detector-js:
         specifier: ^3.0.3
         version: 3.0.3
@@ -321,8 +321,8 @@ packages:
   '@types/node@22.5.1':
     resolution: {integrity: sha512-KkHsxej0j9IW1KKOOAA/XBA0z08UFSrRQHErzEfA3Vgq57eXIMYboIlHJuYIfd+lwCQjtKqUu3UnmKbtUc9yRw==}
 
-  '@types/pg@8.11.7':
-    resolution: {integrity: sha512-k4VGqp1LQzJP5pSK2TR3bJGr9CnErXeRubUEtJu+l1hFGbUwKyMZEjLAlWpfGkrZAatz0O4jP4YPqDepv8CRbQ==}
+  '@types/pg@8.11.8':
+    resolution: {integrity: sha512-IqpCf8/569txXN/HoP5i1LjXfKZWL76Yr2R77xgeIICUbAYHeoaEZFhYHo2uDftecLWrTJUq63JvQu8q3lnDyA==}
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -1104,7 +1104,7 @@ snapshots:
     dependencies:
       undici-types: 6.19.6
 
-  '@types/pg@8.11.7':
+  '@types/pg@8.11.8':
     dependencies:
       '@types/node': 22.5.1
       pg-protocol: 1.6.1
