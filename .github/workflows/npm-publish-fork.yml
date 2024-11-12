@@ -49,7 +49,7 @@ jobs:
           branch: v1.x
 
       - name: GitHub Release
-        uses: softprops/action-gh-release@v2.0.9
+        uses: softprops/action-gh-release@v2.1.0
         if: fromJSON(steps.my-script.outputs.result).continue
         with:
           tag_name: ${{ fromJSON(steps.my-script.outputs.result).version }}
