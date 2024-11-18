@@ -27,8 +27,8 @@ importers:
         specifier: ^7.5.3
         version: 7.6.3
       ua-parser-js:
-        specifier: ^1.0.2
-        version: 1.0.39
+        specifier: ^2.0.0
+        version: 2.0.0
       zx:
         specifier: ^8.0.2
         version: 8.2.2
@@ -52,6 +52,9 @@ packages:
     resolution: {integrity: sha512-HVQE3AAb/pxF8fQAoiqpvg9i3evqug3hoiwakOyZAwJm+6vZehbkYXZ0l4JxS+I3QxM97v5aaRNhj8v5oBhekw==}
     engines: {node: '>=0.10'}
 
+  detect-europe-js@0.1.2:
+    resolution: {integrity: sha512-lgdERlL3u0aUdHocoouzT10d9I89VVhk0qNRmll7mXdGfJT1/wqZ2ZLA4oJAjeACPY5fT1wsbq2AT+GkuInsow==}
+
   device-detector-js@3.0.3:
     resolution: {integrity: sha512-jM89LJAvP6uOd84at8OlD9dWP8KeYCCHUde0RT0HQo/stdoRH4b54Xl/fntx2nEXCmqiFhmo+/cJetS2VGUHPw==}
     engines: {node: '>= 8.11.4'}
@@ -69,6 +72,9 @@ packages:
 
   is-property@1.0.2:
     resolution: {integrity: sha512-Ks/IoX00TtClbGQr4TWXemAnktAQvYB7HzcCxDGqEZU6oCmb2INHuOoKxbtR+HFkmYWBKv/dOZtGRiAjDhj92g==}
+
+  is-standalone-pwa@0.1.1:
+    resolution: {integrity: sha512-9Cbovsa52vNQCjdXOzeQq5CnCbAcRk05aU62K20WO372NrTv0NxibLFCK6lQ4/iZEFdEA3p3t2VNOn8AJ53F5g==}
 
   long@5.2.3:
     resolution: {integrity: sha512-lcHwpNoggQTObv5apGNCTdJrO69eHOZMi4BNC+rTLER8iHAqGrUVeLh/irVIM7zTw2bOXA8T6uNPeujwOLg/2Q==}
@@ -163,8 +169,11 @@ packages:
     resolution: {integrity: sha512-qC9iz2FlN7DQl3+wjwn3802RTyjCx7sDvfQEXchwa6CWOx07/WVfh91gBmQ9fahw8snwGEWU3xGzOt4tFyHLxg==}
     engines: {node: '>= 0.6'}
 
-  ua-parser-js@1.0.39:
-    resolution: {integrity: sha512-k24RCVWlEcjkdOxYmVJgeD/0a1TiSpqLg+ZalVGV9lsnr4yqu0w7tX/x2xX6G4zpkgQnRf89lxuZ1wsbjXM8lw==}
+  ua-is-frozen@0.1.2:
+    resolution: {integrity: sha512-RwKDW2p3iyWn4UbaxpP2+VxwqXh0jpvdxsYpZ5j/MLLiQOfbsV5shpgQiw93+KMYQPcteeMQ289MaAFzs3G9pw==}
+
+  ua-parser-js@2.0.0:
+    resolution: {integrity: sha512-SASgD4RlB7+SCMmlVNqrhPw0f/2pGawWBzJ2+LwGTD0GgNnrKGzPJDiraGHJDwW9Zm5DH2lTmUpqDpbZjJY4+Q==}
     hasBin: true
 
   undici-types@5.26.5:
@@ -201,6 +210,8 @@ snapshots:
 
   denque@2.1.0: {}
 
+  detect-europe-js@0.1.2: {}
+
   device-detector-js@3.0.3: {}
 
   dotenv@16.4.5: {}
@@ -214,6 +225,8 @@ snapshots:
       safer-buffer: 2.1.2
 
   is-property@1.0.2: {}
+
+  is-standalone-pwa@0.1.1: {}
 
   long@5.2.3: {}
 
@@ -294,7 +307,13 @@ snapshots:
 
   sqlstring@2.3.3: {}
 
-  ua-parser-js@1.0.39: {}
+  ua-is-frozen@0.1.2: {}
+
+  ua-parser-js@2.0.0:
+    dependencies:
+      detect-europe-js: 0.1.2
+      is-standalone-pwa: 0.1.1
+      ua-is-frozen: 0.1.2
 
   undici-types@5.26.5:
     optional: true
