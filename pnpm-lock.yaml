@@ -13,7 +13,7 @@ importers:
         version: 3.0.3
       dotenv:
         specifier: ^16.3.1
-        version: 16.4.5
+        version: 16.4.6
       mysql2:
         specifier: ^3.1.2
         version: 3.11.5
@@ -56,8 +56,8 @@ packages:
     resolution: {integrity: sha512-jM89LJAvP6uOd84at8OlD9dWP8KeYCCHUde0RT0HQo/stdoRH4b54Xl/fntx2nEXCmqiFhmo+/cJetS2VGUHPw==}
     engines: {node: '>= 8.11.4'}
 
-  dotenv@16.4.5:
-    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
+  dotenv@16.4.6:
+    resolution: {integrity: sha512-JhcR/+KIjkkjiU8yEpaB/USlzVi3i5whwOjpIRNGi9svKEXZSe+Qp6IWAjFjv+2GViAoDRCUv/QLNziQxsLqDg==}
     engines: {node: '>=12'}
 
   generate-function@2.3.1:
@@ -203,7 +203,7 @@ snapshots:
 
   device-detector-js@3.0.3: {}
 
-  dotenv@16.4.5: {}
+  dotenv@16.4.6: {}
 
   generate-function@2.3.1:
     dependencies:
