@@ -25,7 +25,7 @@ importers:
         version: 3.4.2
       semver:
         specifier: ^7.5.3
-        version: 7.6.3
+        version: 7.7.0
       ua-parser-js:
         specifier: ^1.0.2
         version: 1.0.39
@@ -147,8 +147,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  semver@7.6.3:
-    resolution: {integrity: sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==}
+  semver@7.7.0:
+    resolution: {integrity: sha512-DrfFnPzblFmNrIZzg5RzHegbiRWg7KMR7btwi2yjHwx06zsUbO5g613sVwEV7FTwmzJu+Io0lJe2GJ3LxqpvBQ==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -286,7 +286,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  semver@7.6.3: {}
+  semver@7.7.0: {}
 
   seq-queue@0.0.5: {}
 
