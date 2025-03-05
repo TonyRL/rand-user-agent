@@ -31,21 +31,12 @@ importers:
         version: 2.0.2
       zx:
         specifier: ^8.0.2
-        version: 8.3.2
+        version: 8.4.0
 
 packages:
 
-  '@types/fs-extra@11.0.4':
-    resolution: {integrity: sha512-yTbItCNreRooED33qjunPthRcSjERP1r4MqCZc7wv0u2sUkzTFp45tgUfS5+r7FrZPdmCCNflLhVSP/o+SemsQ==}
-
-  '@types/jsonfile@6.1.4':
-    resolution: {integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ==}
-
   '@types/node-fetch@2.6.12':
     resolution: {integrity: sha512-8nneRWKCg3rMtF69nLQJnOYUcbafYeFSjqkw3jCRLsqkWFlHaoQrr5mXmofFGOx3DKn7UfmBMyov8ySvLRVldA==}
-
-  '@types/node@22.13.0':
-    resolution: {integrity: sha512-ClIbNe36lawluuvq3+YYhnIN2CELi+6q8NpnM7PYp4hBn/TatfboPgVSm2rwKRfnV2M+Ty9GWDFI64KEe+kysA==}
 
   '@types/node@22.13.1':
     resolution: {integrity: sha512-jK8uzQlrvXqEU91UxiK5J7pKHyzgnI1Qnl0QDHIgVGuolJhRb9EEl28Cj9b3rGR8B2lhFCtvIm5os8lFnO/1Ew==}
@@ -230,33 +221,17 @@ packages:
     resolution: {integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==}
     engines: {node: '>=0.4'}
 
-  zx@8.3.2:
-    resolution: {integrity: sha512-qjTunv1NClO05jDaUjrNZfpqC9yvNCchge/bzOcQevsh1aM5qE3TG6MY24kuQKlOWx+7vNuhqO2wa9nQCIGvZA==}
+  zx@8.4.0:
+    resolution: {integrity: sha512-b5+gbUT0akQ5vVuBuHgp0viQx2ZYCuooVD41Z7g47sN0diLsAvB2XteHcp5lec90CNEQ9o7TkXsE3ksaJrZHGw==}
     engines: {node: '>= 12.17.0'}
     hasBin: true
 
 snapshots:
 
-  '@types/fs-extra@11.0.4':
-    dependencies:
-      '@types/jsonfile': 6.1.4
-      '@types/node': 22.13.0
-    optional: true
-
-  '@types/jsonfile@6.1.4':
-    dependencies:
-      '@types/node': 22.13.0
-    optional: true
-
   '@types/node-fetch@2.6.12':
     dependencies:
       '@types/node': 22.13.1
       form-data: 4.0.1
-
-  '@types/node@22.13.0':
-    dependencies:
-      undici-types: 6.20.0
-    optional: true
 
   '@types/node@22.13.1':
     dependencies:
@@ -412,7 +387,4 @@ snapshots:
 
   xtend@4.0.2: {}
 
-  zx@8.3.2:
-    optionalDependencies:
-      '@types/fs-extra': 11.0.4
-      '@types/node': 22.13.0
+  zx@8.4.0: {}
