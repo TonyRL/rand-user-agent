@@ -22,7 +22,7 @@ importers:
         version: 16.4.7
       mysql2:
         specifier: ^3.3.4
-        version: 3.13.0
+        version: 3.14.0
       pg:
         specifier: ^8.7.1
         version: 8.14.1
@@ -568,8 +568,8 @@ packages:
     resolution: {integrity: sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==}
     engines: {node: '>=12'}
 
-  lru.min@1.1.1:
-    resolution: {integrity: sha512-FbAj6lXil6t8z4z3j0E5mfRlPzxkySotzUHwRXjlpRh10vc6AI6WN62ehZj82VG7M20rqogJ0GLwar2Xa05a8Q==}
+  lru.min@1.1.2:
+    resolution: {integrity: sha512-Nv9KddBcQSlQopmBHXSsZVY5xsdlZkdH/Iey0BlcBYggMd4two7cZnKOK9vmy3nY0O5RGH99z1PCeTpPqszUYg==}
     engines: {bun: '>=1.0.0', deno: '>=1.30.0', node: '>=8.0.0'}
 
   math-intrinsics@1.1.0:
@@ -595,8 +595,8 @@ packages:
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
-  mysql2@3.13.0:
-    resolution: {integrity: sha512-M6DIQjTqKeqXH5HLbLMxwcK5XfXHw30u5ap6EZmu7QVmcF/gnh2wS/EOiQ4MTbXz/vQeoXrmycPlVRM00WSslg==}
+  mysql2@3.14.0:
+    resolution: {integrity: sha512-8eMhmG6gt/hRkU1G+8KlGOdQi2w+CgtNoD1ksXZq9gQfkfDsX4LHaBwTe1SY0Imx//t2iZA03DFnyYKPinxSRw==}
     engines: {node: '>= 8.0'}
 
   mz@2.7.0:
@@ -1325,7 +1325,7 @@ snapshots:
 
   lru-cache@7.18.3: {}
 
-  lru.min@1.1.1: {}
+  lru.min@1.1.2: {}
 
   math-intrinsics@1.1.0: {}
 
@@ -1343,14 +1343,14 @@ snapshots:
 
   ms@2.1.3: {}
 
-  mysql2@3.13.0:
+  mysql2@3.14.0:
     dependencies:
       aws-ssl-profiles: 1.1.2
       denque: 2.1.0
       generate-function: 2.3.1
       iconv-lite: 0.6.3
       long: 5.3.1
-      lru.min: 1.1.1
+      lru.min: 1.1.2
       named-placeholders: 1.1.3
       seq-queue: 0.0.5
       sqlstring: 2.3.3
