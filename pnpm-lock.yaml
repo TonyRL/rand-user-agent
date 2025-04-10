@@ -31,7 +31,7 @@ importers:
         version: 2.0.3
       zx:
         specifier: ^8.0.2
-        version: 8.5.0
+        version: 8.5.2
 
 packages:
 
@@ -276,8 +276,8 @@ packages:
     resolution: {integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==}
     engines: {node: '>=0.4'}
 
-  zx@8.5.0:
-    resolution: {integrity: sha512-XS5/oKOQxKNfG2sVO6TQQjZF5RqWGE5QGSUOCZZVTnvYr3RDBTdbX3IFmV9CrnycCAQWcY0hAD3DDUa4RJE4+w==}
+  zx@8.5.2:
+    resolution: {integrity: sha512-eIxjTkCtlzvDNRhw3RD1gGBPA4nxOTn6PafpKl+MW4eE2jR/u/R6mqq7oyUCXwarM5DSP96kWtq6XkrL2kSFrg==}
     engines: {node: '>= 12.17.0'}
     hasBin: true
 
@@ -503,4 +503,4 @@ snapshots:
 
   xtend@4.0.2: {}
 
-  zx@8.5.0: {}
+  zx@8.5.2: {}
