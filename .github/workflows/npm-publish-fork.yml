@@ -47,7 +47,7 @@ jobs:
           commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
 
       - name: GitHub Release
-        uses: softprops/action-gh-release@v2.2.1
+        uses: softprops/action-gh-release@v2.2.2
         if: fromJSON(steps.my-script.outputs.result).continue
         with:
           tag_name: ${{ fromJSON(steps.my-script.outputs.result).version }}
