@@ -43,7 +43,7 @@ importers:
         version: 2.0.3
       zx:
         specifier: ^8.0.2
-        version: 8.5.3
+        version: 8.5.4
 
 packages:
 
@@ -912,8 +912,8 @@ packages:
     engines: {node: '>= 14'}
     hasBin: true
 
-  zx@8.5.3:
-    resolution: {integrity: sha512-TsGLAt8Ngr4wDXLZmN9BT+6FWVLFbqdQ0qpXkV3tIfH7F+MgN/WUeSY7W4nNqAntjWunmnRaznpyxtJRPhCbUQ==}
+  zx@8.5.4:
+    resolution: {integrity: sha512-44oKea9Sa8ZnOkTnS6fRJpg3quzgnbB43nLrVfYnqE86J4sxgZMUDLezzKET/FdOAVkF4X+Alm9Bume+W+RW9Q==}
     engines: {node: '>= 12.17.0'}
     hasBin: true
 
@@ -1648,4 +1648,4 @@ snapshots:
   yaml@2.4.5:
     optional: true
 
-  zx@8.5.3: {}
+  zx@8.5.4: {}
