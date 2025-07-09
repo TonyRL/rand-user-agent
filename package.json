@@ -39,7 +39,7 @@
     "test": ""
   },
   "devDependencies": {
-    "@types/node": "^22.0.2",
+    "@types/node": "^24.0.12",
     "@types/pg": "^8.6.6",
     "device-detector-js": "^3.0.3",
     "dotenv": "^16.1.4",
