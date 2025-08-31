@@ -38,7 +38,7 @@ jobs:
             const { default: script } = await import('${{ github.workspace }}/scripts/update-fork.js')
             return script({ core })
 
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - uses: stefanzweifel/git-auto-commit-action@v6
         id: git-auto-commit
         if: fromJSON(steps.my-script.outputs.result).continue
         with:
