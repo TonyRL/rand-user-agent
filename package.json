@@ -54,5 +54,15 @@
   },
   "engines": {
     "node": ">=14.16"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ],
+    "overrides": {
+      "es-set-tostringtag": "npm:@nolyfill/es-set-tostringtag@^1",
+      "hasown": "npm:@nolyfill/hasown@^1",
+      "safer-buffer": "npm:@nolyfill/safer-buffer@^1"
+    }
   }
 }
