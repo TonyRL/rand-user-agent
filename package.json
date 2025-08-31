@@ -37,5 +37,12 @@
     "semver": "^7.5.3",
     "ua-parser-js": "^2.0.2",
     "zx": "^8.0.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "es-set-tostringtag": "npm:@nolyfill/es-set-tostringtag@^1",
+      "hasown": "npm:@nolyfill/hasown@^1",
+      "safer-buffer": "npm:@nolyfill/safer-buffer@^1"
+    }
   }
 }
